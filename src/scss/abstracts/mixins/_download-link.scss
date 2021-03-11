@@ -24,19 +24,36 @@
       max-width: 320px;
       border-radius: 2rem;
       border-bottom: 5px solid;
+      transition: opacity 0.2s, box-shadow 0.2s;
 
       @media screen and (min-width: 768px){
-         max-width: 280px;
+         max-width: 280px;   
       }
 
       &--cyan{
          background-color: c.$strong-cyan;
          border-bottom-color: darken(c.$strong-cyan, 5%);
+
+         @media screen and (min-width: 768px){
+            &:hover{
+               box-shadow: 0 5px 10px 5px rgba(c.$strong-cyan, 0.5);
+            }
+         }
       }
 
       &--blue{
          background-color: c.$light-blue;
          border-bottom-color: darken(c.$light-blue, 5%);
+
+         @media screen and (min-width: 768px){
+            &:hover{
+               box-shadow: 0 5px 10px 5px rgba(c.$light-blue, 0.5);
+            }
+         }
+      }
+
+      &:active{
+         opacity: 0.7;
       }
    }
 }
