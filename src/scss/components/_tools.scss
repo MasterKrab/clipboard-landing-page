@@ -1,0 +1,60 @@
+@use  "abstracts/vars/colors" as c;
+
+.tools{
+   text-align: center;
+   padding: 1rem;
+
+   &__title{
+      color: c.$dark-grayish-blue;
+      
+      @media screen and (min-width: 768px){
+         font-size: 2rem;
+      }
+   }
+
+   &__text{
+      color: c.$grayish-blue;
+      line-height: 1.5;
+      
+      @media screen and (min-width: 768px){
+         font-size: 1.2rem;
+      }
+   }
+
+   &__cards{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      margin-top: 100px;
+   }
+}
+
+.tools-card{
+   background-repeat: no-repeat;
+   background-position: top center;
+   padding-top: 80px;
+   max-width: 350px;
+   
+   &--blacklist{
+      background-image: url(../assets/img/icon-blacklist.svg);
+   }
+   
+   &--text{
+      background-image: url(../assets/img/icon-text.svg);
+   }
+
+   &--preview{
+      background-image: url(../assets/img/icon-preview.svg);
+   }
+
+   &__title{
+      color: c.$dark-grayish-blue;
+      margin: 0;
+   }
+
+   &__text{
+      color: c.$grayish-blue;
+      line-height: 2;
+   }
+}

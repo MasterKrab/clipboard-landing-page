@@ -4,7 +4,7 @@ html(lang="en")
       meta(charset="UTF-8")
       meta(http-equiv="X-UA-Compatible", content="IE=edge")
       meta(name="viewport", content="width=device-width, initial-scale=1.0")
-      title Huddle landing page with curved section
+      title Clipboard landing page
       //- Favicons
       link(rel="apple-touch-icon", sizes="57x57", href="assets/favicons/apple-icon-57x57.png")
       link(rel="apple-touch-icon", sizes="60x60", href="assets/favicons/apple-icon-60x60.png")
@@ -25,4 +25,88 @@ html(lang="en")
       meta(name="theme-color", content="#ffffff")
       //- CSS
       link(rel="stylesheet", href="css/styles.css")
+      //- Fonts
+      link(rel="preconnect", href="https://fonts.gstatic.com")
+      //- Bai Jamjuree
+      link(href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap", rel="stylesheet")
+      //- Fontawesome
+      link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.15.2/css/all.css", integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu", crossorigin="anonymous")
    body
+      header.main-header 
+         img.main-header__logo(src="../assets/img/logo.svg", alt="clipboard logo")
+         h1.title A history of everything you copy
+         p.main-header__text Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.
+         .main-header__links
+            a(href="#").main-header__link.main-header__link--cyan Download for iOS
+            a(href="#").main-header__link.main-header__link--blue Download for Mac
+      main.main 
+         article.introduction 
+            h2.introduction__title Keep track of your snippets
+            p.introduction__text Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.
+         article.benefits
+            .benefits__illustration 
+            .benefits__cards 
+               section.benefits__card
+                  h3.benefits__title Quick Search
+                  p.benefits__text Easily search your snippets by content, category, web address, application, and more.
+               section.benefits__card
+                  h3.benefits__title iCloud Sync
+                  p.benefits__text Instantly saves and syncs snippets across all your devices.
+               section.benefits__card
+                  h3.benefits__title Complete History
+                  p.benefits__text Retrieve any snippets from the first moment you started using the app.
+         article.access
+            h2.access__title Access Clipboard anywhere
+            p.access__text Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.
+            .access__illustration
+         article.tools 
+            h2.tools__title Supercharge your workflow
+            p.tools__text We’ve got the tools to boost your productivity.
+            .tools__cards 
+               section.tools-card.tools-card--blacklist
+                  h3.tools-card__title Create blacklists
+                  p.tools-card__text Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+               section.tools-card.tools-card--text
+                  h3.tools-card__title Plain text snippets
+                  p.tools-card__text Remove unwanted formatting from copied text for a consistent look.
+               section.tools-card.tools-card--preview
+                  h3.tools-card__title Sneak preview
+                  p.tools-card__text Quick preview of all snippets on your Clipboard for easy access.
+         article.companies 
+            img.companies__logo(src="../assets/img/logo-google.png", alt="google logo")
+            img.companies__logo(src="../assets/img/logo-ibm.png", alt="imb logo")
+            img.companies__logo(src="../assets/img/logo-microsoft.png", alt="microsoft logo")
+            img.companies__logo(src="../assets/img/logo-hp.png", alt="hp logo")
+            img.companies__logo(src="../assets/img/logo-vector-graphics.png", alt="vector graphics logo")
+         article.platforms
+            h2.platforms__title Clipboard for iOS and Mac OS 
+            p.platforms__text Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.
+            .platforms__links
+               a(href="#").platforms__link.platforms__link--cyan Download for iOS
+               a(href="#").platforms__link.platforms__link--blue Download for Mac
+      footer.footer
+         img.footer__logo(src="../assets/img/logo.svg", alt="clipboard logo")
+         ul.footer__list 
+            li.footer__item
+               a.footer__link(href="#") FAQs
+            li.footer__item
+               a.footer__link(href="#") Contact Us
+            li.footer__item
+               a.footer__link(href="#") Privacy Policy
+            li.footer__item
+               a.footer__link(href="#") Press Kit
+            li.footer__item
+               a.footer__link(href="#") Install Guide
+         ul.social-list 
+            li.social-list__item 
+               a.social-list__link(href="#")
+                  i.fab.fa-facebook-square.social-list__icon
+                  span.social-list__screen-reader-only Go to Clipboard's facebook
+            li.social-list__item 
+               a.social-list__link(href="#")
+                  i.fab.fa-twitter.social-list__icon
+                  span.social-list__screen-reader-only Go to Clipboard's twitter
+            li.social-list__item 
+               a.social-list__link(href="#")
+                  i.fab.fa-instagram.social-list__icon
+                  span.social-list__screen-reader-only Go to Clipboard's instagram

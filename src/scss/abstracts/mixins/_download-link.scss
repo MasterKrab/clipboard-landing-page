@@ -1,0 +1,42 @@
+@use "abstracts/vars/colors" as c;
+
+@mixin download-link{
+   &__links{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      @media screen and (min-width: 768px){
+         flex-direction: row;
+      }
+   }
+
+   &__link{
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+      width: 100%;
+      max-width: 320px;
+      border-radius: 2rem;
+      border-bottom: 5px solid;
+
+      @media screen and (min-width: 768px){
+         max-width: 280px;
+      }
+
+      &--cyan{
+         background-color: c.$strong-cyan;
+         border-bottom-color: darken(c.$strong-cyan, 5%);
+      }
+
+      &--blue{
+         background-color: c.$light-blue;
+         border-bottom-color: darken(c.$light-blue, 5%);
+      }
+   }
+}

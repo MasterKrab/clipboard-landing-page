@@ -1,0 +1,39 @@
+@use "abstracts/vars/colors" as c;
+
+.access{
+   text-align: center;
+   padding: 1rem;
+
+   @media screen and (min-width: 768px){
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+   }
+
+
+   &__title{
+      color: c.$dark-grayish-blue;
+      
+      @media screen and (min-width: 768px){
+         font-size: 2rem;
+      }
+   }
+
+   &__text{
+      color: c.$grayish-blue;
+      line-height: 1.5;
+      
+      @media screen and (min-width: 768px){
+         font-size: 1.2rem;
+         padding: 0 90px;
+      }
+   }
+
+   &__illustration{
+      content: url(../assets/img/image-devices.png);
+      width: 100%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+   }
+}

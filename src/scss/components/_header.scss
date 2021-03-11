@@ -1,0 +1,47 @@
+@use "abstracts/vars/colors" as c;
+@use "abstracts/mixins/download-link" as *;
+
+.main-header{
+   background-image: url(../assets/img/bg-header-mobile.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+   padding: 1rem;
+   margin-bottom: 100px;
+
+   @media screen and (min-width: 768px){
+      background-image: url(../assets/img/bg-header-desktop.png);
+   }
+
+   &__logo{
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+
+   &__text{
+      color: c.$grayish-blue;
+      line-height: 1.5;
+      font-size: 1rem;
+
+      @media screen and (min-width: 768px){
+         font-size: 1.2rem;
+         max-width: 768px;
+         margin-left: auto;
+         margin-right: auto;
+      }
+   }
+
+   @include download-link;
+}
+
+.title{
+   color: c.$dark-grayish-blue;
+   font-size: 1.8rem;
+
+   @media screen and (min-width: 768px){
+      font-size: 2.5rem;
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
